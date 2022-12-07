@@ -129,9 +129,6 @@ static void inline test(uint64_t counter_value)
     if (dem> a)
       {
         pwm=0;
-        ESP_ERROR_CHECK(ledc_set_duty(LEDC_MODE, LEDC_CHANNEL,pwm));
-        ESP_ERROR_CHECK(ledc_update_duty(LEDC_MODE, LEDC_CHANNEL));
- 
         gpio_set_level(nut1, 0);
         gpio_set_level(led_t, 0);
         gpio_set_level(led_1, 0);
@@ -1250,45 +1247,39 @@ void control_panel(void *pvParameter)
 
     if(gpio_get_level(but_o) == 0) {// off
     pwm=0;
-    ESP_ERROR_CHECK(ledc_set_duty(LEDC_MODE, LEDC_CHANNEL,pwm));
-    ESP_ERROR_CHECK(ledc_update_duty(LEDC_MODE, LEDC_CHANNEL));
     bat_led(0);
-       dem=0;// biến dừng timer đếm
-       at=0;
-       a=0;
+    dem=0;// biến dừng timer đếm
+    at=0;
+    a=0;
     }
 
     if(gpio_get_level(but_1) == 0) {// mức 1
-     pwm=1000;
-    ESP_ERROR_CHECK(ledc_set_duty(LEDC_MODE, LEDC_CHANNEL,pwm));
-    ESP_ERROR_CHECK(ledc_update_duty(LEDC_MODE, LEDC_CHANNEL));
+    pwm=1000;
     bat_led(1);
-       at=0;
+    at=0;
        
     }
 
     if(gpio_get_level(but_2) == 0) {// mức 2
      pwm=2500;
-    ESP_ERROR_CHECK(ledc_set_duty(LEDC_MODE, LEDC_CHANNEL,pwm));
-    ESP_ERROR_CHECK(ledc_update_duty(LEDC_MODE, LEDC_CHANNEL));
-    bat_led(2);
-       at=0;
+     bat_led(2);
+     at=0;
       
      
     }
     if(gpio_get_level(but_3) == 0) {// mức 3
      pwm=8000;
-    ESP_ERROR_CHECK(ledc_set_duty(LEDC_MODE, LEDC_CHANNEL,pwm));
-    ESP_ERROR_CHECK(ledc_update_duty(LEDC_MODE, LEDC_CHANNEL));
-    bat_led(3);
-       at=0;
+     bat_led(3);
+     at=0;
       
     }
     if(gpio_get_level(but_a) == 0) {// mức AUTO
     bat_led(4);
-       at=1;
-       
+     at=1;    
     }
+        
+    ESP_ERROR_CHECK(ledc_set_duty(LEDC_MODE, LEDC_CHANNEL,pwm));
+    ESP_ERROR_CHECK(ledc_update_duty(LEDC_MODE, LEDC_CHANNEL));
     
     }
 }
@@ -1339,8 +1330,6 @@ void main_task(void *pvParameter)
             if(temp>0&&temp<9) pwm= temp*1000;
             if(temp>9) pwm=8000;
             if(temp<0) pwm=0;
-            ESP_ERROR_CHECK(ledc_set_duty(LEDC_MODE, LEDC_CHANNEL,pwm));
-            ESP_ERROR_CHECK(ledc_update_duty(LEDC_MODE, LEDC_CHANNEL));
         }
         
         example_timer_event_t evt;
@@ -1351,6 +1340,8 @@ void main_task(void *pvParameter)
         uint64_t task_counter_value;
         timer_get_counter_value(evt.info.timer_group, evt.info.timer_idx, &task_counter_value);
         if(dem<a+1) test(task_counter_value);
+        ESP_ERROR_CHECK(ledc_set_duty(LEDC_MODE, LEDC_CHANNEL,pwm));
+        ESP_ERROR_CHECK(ledc_update_duty(LEDC_MODE, LEDC_CHANNEL));
     }
    
 }
