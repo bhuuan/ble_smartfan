@@ -1,0 +1,6 @@
+source "C:/Users/bhuuan/esp/esp-idf/components/app_update/Kconfig.projbuild"
+source "C:/Users/bhuuan/esp/esp-idf/components/bootloader/Kconfig.projbuild"
+source "C:/Users/bhuuan/esp/esp-idf/components/esp_rom/Kconfig.projbuild"
+source "C:/Users/bhuuan/esp/esp-idf/components/esptool_py/Kconfig.projbuild"
+source "C:/Users/bhuuan/esp/esp-idf/components/partition_table/Kconfig.projbuild"
+source "D:/rogo/smfan/raw/2022.12.07/ble_smartfan/main/Kconfig.projbuild"
