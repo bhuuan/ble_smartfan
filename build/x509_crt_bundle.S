@@ -1,4 +1,4 @@
-/* * Data converted from D:/rogo/smfan/raw/2022.12.07/ble_smartfan/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from D:/rogo/smfan/raw/2022.12.07/ble_smartfan/ble_smartfan/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 .section .rodata.embedded

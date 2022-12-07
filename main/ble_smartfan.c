@@ -128,10 +128,10 @@ static void inline test(uint64_t counter_value)
     dem++;
     if (dem> a)
       {
-        ESP_ERROR_CHECK(ledc_set_duty(LEDC_MODE, LEDC_CHANNEL,0));
-        ESP_ERROR_CHECK(ledc_update_duty(LEDC_MODE, LEDC_CHANNEL));
         pwm=0;
-        //bat_led(0);
+        ESP_ERROR_CHECK(ledc_set_duty(LEDC_MODE, LEDC_CHANNEL,pwm));
+        ESP_ERROR_CHECK(ledc_update_duty(LEDC_MODE, LEDC_CHANNEL));
+ 
         gpio_set_level(nut1, 0);
         gpio_set_level(led_t, 0);
         gpio_set_level(led_1, 0);
@@ -843,14 +843,12 @@ static void gatts_profile_c_event_handler(esp_gatts_cb_event_t event, esp_gatt_i
 
    /////////////////////////////////////////////     Set thời gian chạy  
                 if(descr_value ==0x00) {a=0; dem=0;}      
-                if(descr_value ==0x01) {a=15; dem=0;} //15p
+                if(descr_value ==0x01) {a=900; dem=0;} //15p
                 if(descr_value ==0x02) {a=1800; dem=0;} //30p
                 if(descr_value ==0x03) {a=3600; dem=0;} //60p
                 if(descr_value ==0x04) {a=7200; dem=0;}//120p
                 if(descr_value ==0x05) {a=14200; dem=0;}//240p
-                if(descr_value ==0x06) {a=28400; dem=0;}//480p
 ///////////////////////////////////////////////////
-
            
         }
         example_write_event_env(gatts_if, &a_prepare_write_env, param);

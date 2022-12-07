@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("D:/rogo/smfan/raw/2022.12.07/ble_smartfan/build/esp-idf/esp_hw_support/port/esp32/cmake_install.cmake")
+  include("D:/rogo/smfan/raw/2022.12.07/ble_smartfan/ble_smartfan/build/esp-idf/esp_hw_support/port/esp32/cmake_install.cmake")
 
 endif()
 

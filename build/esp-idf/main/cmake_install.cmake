@@ -1,4 +1,4 @@
-# Install script for directory: D:/rogo/smfan/raw/2022.12.07/ble_smartfan/main
+# Install script for directory: D:/rogo/smfan/raw/2022.12.07/ble_smartfan/ble_smartfan/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

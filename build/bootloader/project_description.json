@@ -1,8 +1,8 @@
 {
     "project_name":       "bootloader",
     "project_path":       "C:/Users/bhuuan/esp/esp-idf/components/bootloader/subproject",
-    "build_dir":          "D:/rogo/smfan/raw/2022.12.07/ble_smartfan/build/bootloader",
-    "config_file":        "D:/rogo/smfan/raw/2022.12.07/ble_smartfan/sdkconfig",
+    "build_dir":          "D:/rogo/smfan/raw/2022.12.07/ble_smartfan/ble_smartfan/build/bootloader",
+    "config_file":        "D:/rogo/smfan/raw/2022.12.07/ble_smartfan/ble_smartfan/sdkconfig",
     "config_defaults":    "",
     "app_elf":            "bootloader.elf",
     "app_bin":            "bootloader.bin",

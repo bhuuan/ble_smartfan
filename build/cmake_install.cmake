@@ -1,4 +1,4 @@
-# Install script for directory: D:/rogo/smfan/raw/2022.12.07/ble_smartfan
+# Install script for directory: D:/rogo/smfan/raw/2022.12.07/ble_smartfan/ble_smartfan
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("D:/rogo/smfan/raw/2022.12.07/ble_smartfan/build/esp-idf/cmake_install.cmake")
+  include("D:/rogo/smfan/raw/2022.12.07/ble_smartfan/ble_smartfan/build/esp-idf/cmake_install.cmake")
 
 endif()
 
@@ -51,5 +51,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/rogo/smfan/raw/2022.12.07/ble_smartfan/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/rogo/smfan/raw/2022.12.07/ble_smartfan/ble_smartfan/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

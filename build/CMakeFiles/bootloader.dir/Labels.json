@@ -2,34 +2,34 @@
 	"sources" : 
 	[
 		{
-			"file" : "D:/rogo/smfan/raw/2022.12.07/ble_smartfan/build/CMakeFiles/bootloader"
+			"file" : "D:/rogo/smfan/raw/2022.12.07/ble_smartfan/ble_smartfan/build/CMakeFiles/bootloader"
 		},
 		{
-			"file" : "D:/rogo/smfan/raw/2022.12.07/ble_smartfan/build/CMakeFiles/bootloader.rule"
+			"file" : "D:/rogo/smfan/raw/2022.12.07/ble_smartfan/ble_smartfan/build/CMakeFiles/bootloader.rule"
 		},
 		{
-			"file" : "D:/rogo/smfan/raw/2022.12.07/ble_smartfan/build/CMakeFiles/bootloader-complete.rule"
+			"file" : "D:/rogo/smfan/raw/2022.12.07/ble_smartfan/ble_smartfan/build/CMakeFiles/bootloader-complete.rule"
 		},
 		{
-			"file" : "D:/rogo/smfan/raw/2022.12.07/ble_smartfan/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
+			"file" : "D:/rogo/smfan/raw/2022.12.07/ble_smartfan/ble_smartfan/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
 		},
 		{
-			"file" : "D:/rogo/smfan/raw/2022.12.07/ble_smartfan/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
+			"file" : "D:/rogo/smfan/raw/2022.12.07/ble_smartfan/ble_smartfan/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
 		},
 		{
-			"file" : "D:/rogo/smfan/raw/2022.12.07/ble_smartfan/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
+			"file" : "D:/rogo/smfan/raw/2022.12.07/ble_smartfan/ble_smartfan/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
 		},
 		{
-			"file" : "D:/rogo/smfan/raw/2022.12.07/ble_smartfan/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
+			"file" : "D:/rogo/smfan/raw/2022.12.07/ble_smartfan/ble_smartfan/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
 		},
 		{
-			"file" : "D:/rogo/smfan/raw/2022.12.07/ble_smartfan/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
+			"file" : "D:/rogo/smfan/raw/2022.12.07/ble_smartfan/ble_smartfan/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
 		},
 		{
-			"file" : "D:/rogo/smfan/raw/2022.12.07/ble_smartfan/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
+			"file" : "D:/rogo/smfan/raw/2022.12.07/ble_smartfan/ble_smartfan/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
 		},
 		{
-			"file" : "D:/rogo/smfan/raw/2022.12.07/ble_smartfan/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
+			"file" : "D:/rogo/smfan/raw/2022.12.07/ble_smartfan/ble_smartfan/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
 		}
 	],
 	"target" : 
