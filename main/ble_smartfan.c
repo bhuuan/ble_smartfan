@@ -127,8 +127,9 @@ static void inline test(uint64_t counter_value)
     dem++;
     if (dem> a)
       {
+        at=0;
         pwm=0;
-        bat_led(0);;
+        bat_led(0);
       }
     else
     { 
