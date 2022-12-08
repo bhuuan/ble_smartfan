@@ -1237,8 +1237,7 @@ void control_panel(void *pvParameter)
 
 
     while(1) {
-
-
+        
     if(gpio_get_level(but_o) == 0) {// off
     pwm=0;
     bat_led(0);
@@ -1257,24 +1256,19 @@ void control_panel(void *pvParameter)
     if(gpio_get_level(but_2) == 0) {// mức 2
      pwm=2500;
      bat_led(2);
-     at=0;
-      
-     
+     at=0;  
     }
     if(gpio_get_level(but_3) == 0) {// mức 3
      pwm=8000;
      bat_led(3);
-     at=0;
-      
+     at=0;      
     }
     if(gpio_get_level(but_a) == 0) {// mức AUTO
     bat_led(4);
      at=1;    
-    }
-        
+    }       
     ledc_set_duty(LEDC_MODE, LEDC_CHANNEL,pwm);
-    ledc_update_duty(LEDC_MODE, LEDC_CHANNEL);
-    
+    ledc_update_duty(LEDC_MODE, LEDC_CHANNEL); 
     }
 }
 
@@ -1320,7 +1314,7 @@ void main_task(void *pvParameter)
     while (1) {
 
         if(at==1){
-            int temp = DHT11_read().temperature -22;
+            int temp = DHT11_read().temperature -22;/// 17-> 25
             if(temp>0&&temp<9) pwm= temp*1000;
             if(temp>9) pwm=8000;
             if(temp<0) pwm=0;
@@ -1329,7 +1323,7 @@ void main_task(void *pvParameter)
         example_timer_event_t evt;
         xQueueReceive(s_timer_queue, &evt, portMAX_DELAY);
         printf("-------- TASK TIME --------\n");
-        printf("Temperature is %f \n", DHT11_read().temperature-5); //dht11
+        printf("Temperature is %f \n", DHT11_read().temperature-5); //dht11 
         printf("PWM is %d \n",  pwm); 
         uint64_t task_counter_value;
         timer_get_counter_value(evt.info.timer_group, evt.info.timer_idx, &task_counter_value);
