@@ -35,8 +35,7 @@ int at;
 #define LEDC_MODE               LEDC_LOW_SPEED_MODE
 #define LEDC_OUTPUT_IO          (25) // Define the output GPIO
 #define LEDC_CHANNEL            LEDC_CHANNEL_0
-#define LEDC_DUTY_RES           LEDC_TIMER_13_BIT // Set duty resolution to 13 bits
-#define LEDC_DUTY               (4095) // Set duty to 50%. ((2 ** 13) - 1) * 50% = 4095
+#define LEDC_DUTY_RES           LEDC_TIMER_13_BIT // Set duty resolution to 13 bits(2^13-1)
 #define LEDC_FREQUENCY          (5000) // Frequency in Hertz. Set frequency at 5 kHz
 
 ////
@@ -129,12 +128,7 @@ static void inline test(uint64_t counter_value)
     if (dem> a)
       {
         pwm=0;
-        gpio_set_level(nut1, 0);
-        gpio_set_level(led_t, 0);
-        gpio_set_level(led_1, 0);
-        gpio_set_level(led_2, 0);
-        gpio_set_level(led_3, 0);
-        gpio_set_level(led_a, 0);
+        bat_led(0);;
       }
     else
     { 
