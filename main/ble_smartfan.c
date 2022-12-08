@@ -1272,8 +1272,8 @@ void control_panel(void *pvParameter)
      at=1;    
     }
         
-    ESP_ERROR_CHECK(ledc_set_duty(LEDC_MODE, LEDC_CHANNEL,pwm));
-    ESP_ERROR_CHECK(ledc_update_duty(LEDC_MODE, LEDC_CHANNEL));
+    ledc_set_duty(LEDC_MODE, LEDC_CHANNEL,pwm);
+    ledc_update_duty(LEDC_MODE, LEDC_CHANNEL);
     
     }
 }
@@ -1334,8 +1334,8 @@ void main_task(void *pvParameter)
         uint64_t task_counter_value;
         timer_get_counter_value(evt.info.timer_group, evt.info.timer_idx, &task_counter_value);
         if(dem<a+1) test(task_counter_value);
-        ESP_ERROR_CHECK(ledc_set_duty(LEDC_MODE, LEDC_CHANNEL,pwm));
-        ESP_ERROR_CHECK(ledc_update_duty(LEDC_MODE, LEDC_CHANNEL));
+        ledc_set_duty(LEDC_MODE, LEDC_CHANNEL,pwm);
+        ledc_update_duty(LEDC_MODE, LEDC_CHANNEL);
     }
    
 }
