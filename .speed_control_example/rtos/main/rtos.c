@@ -319,7 +319,7 @@ static void IRAM_ATTR gpio_interrupt_handler(void *args)
 
 void zero_crossing()
 {
-  int chop_time = (180);// 5-180 dải xung( min 180- max 5)
+  int chop_time = (180);// 5-180 dải xung (min 180 - max 5)
   vTaskDelay(chop_time/ portTICK_RATE_MS);
   gpio_set_level(LED_PIN, 1);
   vTaskDelay(20/ portTICK_RATE_MS );
@@ -331,7 +331,7 @@ void LED_Control_Task(void *params)
     int pinNumber, count = 0;
     while (true)
     {
-         if (xQueueReceive(interputQueue, &pinNumber, portMAX_DELAY))
+        if (xQueueReceive(interputQueue, &pinNumber, portMAX_DELAY))
         // {
             zero_crossing();
     }

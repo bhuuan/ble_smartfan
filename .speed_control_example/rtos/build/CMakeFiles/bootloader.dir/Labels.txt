@@ -1,13 +1,13 @@
 # Target labels
  bootloader
 # Source files and their labels
-E:/Espressif/frameworks/esp-idf-v4.4.2/examples/get-started/rtos/build/CMakeFiles/bootloader
-E:/Espressif/frameworks/esp-idf-v4.4.2/examples/get-started/rtos/build/CMakeFiles/bootloader.rule
-E:/Espressif/frameworks/esp-idf-v4.4.2/examples/get-started/rtos/build/CMakeFiles/bootloader-complete.rule
-E:/Espressif/frameworks/esp-idf-v4.4.2/examples/get-started/rtos/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
-E:/Espressif/frameworks/esp-idf-v4.4.2/examples/get-started/rtos/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
-E:/Espressif/frameworks/esp-idf-v4.4.2/examples/get-started/rtos/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
-E:/Espressif/frameworks/esp-idf-v4.4.2/examples/get-started/rtos/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
-E:/Espressif/frameworks/esp-idf-v4.4.2/examples/get-started/rtos/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
-E:/Espressif/frameworks/esp-idf-v4.4.2/examples/get-started/rtos/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
-E:/Espressif/frameworks/esp-idf-v4.4.2/examples/get-started/rtos/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
+D:/rogo/smfan/firmware/ble_smartfan/.speed_control_example/rtos/build/CMakeFiles/bootloader
+D:/rogo/smfan/firmware/ble_smartfan/.speed_control_example/rtos/build/CMakeFiles/bootloader.rule
+D:/rogo/smfan/firmware/ble_smartfan/.speed_control_example/rtos/build/CMakeFiles/bootloader-complete.rule
+D:/rogo/smfan/firmware/ble_smartfan/.speed_control_example/rtos/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+D:/rogo/smfan/firmware/ble_smartfan/.speed_control_example/rtos/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+D:/rogo/smfan/firmware/ble_smartfan/.speed_control_example/rtos/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+D:/rogo/smfan/firmware/ble_smartfan/.speed_control_example/rtos/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+D:/rogo/smfan/firmware/ble_smartfan/.speed_control_example/rtos/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+D:/rogo/smfan/firmware/ble_smartfan/.speed_control_example/rtos/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+D:/rogo/smfan/firmware/ble_smartfan/.speed_control_example/rtos/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

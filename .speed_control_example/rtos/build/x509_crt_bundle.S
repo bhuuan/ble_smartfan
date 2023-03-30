@@ -1,4 +1,4 @@
-/* * Data converted from E:/Espressif/frameworks/esp-idf-v4.4.2/examples/get-started/rtos/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from D:/rogo/smfan/firmware/ble_smartfan/.speed_control_example/rtos/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 .section .rodata.embedded

@@ -4,16 +4,16 @@
 cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
-  "E:/Espressif/frameworks/esp-idf-v4.4.2/components/bootloader/subproject"
-  "E:/Espressif/frameworks/esp-idf-v4.4.2/examples/get-started/rtos/build/bootloader"
-  "E:/Espressif/frameworks/esp-idf-v4.4.2/examples/get-started/rtos/build/bootloader-prefix"
-  "E:/Espressif/frameworks/esp-idf-v4.4.2/examples/get-started/rtos/build/bootloader-prefix/tmp"
-  "E:/Espressif/frameworks/esp-idf-v4.4.2/examples/get-started/rtos/build/bootloader-prefix/src/bootloader-stamp"
-  "E:/Espressif/frameworks/esp-idf-v4.4.2/examples/get-started/rtos/build/bootloader-prefix/src"
-  "E:/Espressif/frameworks/esp-idf-v4.4.2/examples/get-started/rtos/build/bootloader-prefix/src/bootloader-stamp"
+  "C:/Users/bhuuan/esp/esp-idf/components/bootloader/subproject"
+  "D:/rogo/smfan/firmware/ble_smartfan/.speed_control_example/rtos/build/bootloader"
+  "D:/rogo/smfan/firmware/ble_smartfan/.speed_control_example/rtos/build/bootloader-prefix"
+  "D:/rogo/smfan/firmware/ble_smartfan/.speed_control_example/rtos/build/bootloader-prefix/tmp"
+  "D:/rogo/smfan/firmware/ble_smartfan/.speed_control_example/rtos/build/bootloader-prefix/src/bootloader-stamp"
+  "D:/rogo/smfan/firmware/ble_smartfan/.speed_control_example/rtos/build/bootloader-prefix/src"
+  "D:/rogo/smfan/firmware/ble_smartfan/.speed_control_example/rtos/build/bootloader-prefix/src/bootloader-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "E:/Espressif/frameworks/esp-idf-v4.4.2/examples/get-started/rtos/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
+    file(MAKE_DIRECTORY "D:/rogo/smfan/firmware/ble_smartfan/.speed_control_example/rtos/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
 endforeach()
